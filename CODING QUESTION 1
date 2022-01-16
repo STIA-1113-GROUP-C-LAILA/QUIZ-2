@@ -1,0 +1,60 @@
+package question2;
+import java.util.Scanner;
+public class ONE {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+		int bonus;
+		int salary;
+		int year;
+		
+		System.out.print("Enter your salary : RM");
+		salary = scan.nextInt();
+		
+		System.out.print("Enter your year : ");
+		year = scan.nextInt();
+		
+		if ( year > 5) {
+			bonus = salary * 5/100;
+			System.out.println("The net amount is : RM" + bonus);
+		}
+		
+		int high=Integer.MIN_VALUE;
+		int low=Integer.MAX_VALUE;
+
+		System.out.println("Enter your montly salary :");
+		int a = scan.nextInt();
+
+		if(a > high){
+		    low = high;
+		    high = a;
+		}
+
+		if (a < low){
+		    high=low;
+		    low=a;
+		}
+
+		System.out.println("Highest salary: RM" + high);
+		System.out.println("Lowest salary: RM" + low);
+		
+		int x [] = new int [3];
+		int y;
+		
+		System.out.println("Please enter 3 ages of employees : ");
+		for ( y = 0; y < x.length; y++)
+			x[y] = scan.nextInt();
+		reverseOrder(x);
+		
+	}
+	
+	public static void reverseOrder ( int [] x) {
+		System.out.println ("The reverse order of employees' ages  : ");
+		for (int z = x.length - 1; z >= 0; z--)
+			System.out.println(x[z]);
+			
+	} 
+      
+	}
+		
