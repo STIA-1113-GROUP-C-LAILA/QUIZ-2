@@ -1,0 +1,33 @@
+package question2;
+import java.util.Scanner;
+public class TWO {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner (System.in);
+		int star;
+		
+		System.out.println("Please enter the number of items : ");
+		star = scan.nextInt();
+		
+		int a [] = new int [star];
+		
+		System.out.print("Please enter the value of items : ");
+		for (int x =0; x <a.length; x++) {
+			a [x] = scan.nextInt();
+		}
+		
+		for (int i = 0; i < star; i++) {
+			int n = a[i];
+			
+			for (int j =0; j <= n; j++) {
+				System.out.print("*");
+			}
+			
+			System.out.println(" ");
+		
+
+	
+	}
+	}
+}
